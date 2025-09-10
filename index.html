@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OdontoAI - IA de Atendimento Automático para Clínicas Odontológicas</title>
+    <meta name="description" content="IA que faz ligações automáticas, responde, qualifica e agenda consultas odontológicas 24h por dia, sem salário, sem erro.">
+    <meta name="keywords" content="IA odontológica, atendimento automático, clínica odontológica, leads, agendamento automático">
+    <meta property="og:title" content="OdontoAI - IA de Atendimento Automático">
+    <meta property="og:description" content="O lead que você não atende, marca com o concorrente. IA que qualifica e agenda consultas 24h por dia.">
+    <meta name="twitter:title" content="OdontoAI - IA de Atendimento Automático">
+    <meta name="twitter:description" content="IA que faz ligações automáticas para clínicas odontológicas 24h por dia.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <!-- Predefined Tailwind CSS, use it as needed, or update base on your -->
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #dc2626;
+            --accent-color: #1f2937;
+            --background-color: #ffffff;
+            --text-color: #1f2937;
+            --gray-light: #f8fafc;
+            --gray-medium: #64748b;
+            --success-color: #059669;
+            --shadow-light: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+            --shadow-medium: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+        }
+    }
+
+    @layer base {
+        body {
+            @apply font-sans text-[var(--text-color)] bg-[var(--background-color)];
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            @apply font-bold text-[var(--text-color)];
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-all duration-200;
+        }
+        
+        .btn-secondary {
+            @apply bg-[var(--secondary-color)] text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-all duration-200;
+        }
+        
+        .btn-outline {
+            @apply border-2 border-[var(--primary-color)] text-[var(--primary-color)] px-6 py-3 rounded-lg font-semibold hover:bg-[var(--primary-color)] hover:text-white transition-all duration-200;
+        }
+        
+        .card {
+            @apply bg-white rounded-lg p-6 shadow-[var(--shadow-medium)];
+        }
+        
+        .stat-card {
+            @apply bg-white rounded-lg p-8 text-center shadow-[var(--shadow-medium)] border-l-4 border-[var(--primary-color)];
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Problems.js"></script>
+    <script type="text/babel" src="components/Solution.js"></script>
+    <script type="text/babel" src="components/HowItWorks.js"></script>
+    <script type="text/babel" src="components/Results.js"></script>
+    <script type="text/babel" src="components/Pricing.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/FAQ.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
